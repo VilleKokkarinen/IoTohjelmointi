@@ -1,0 +1,23 @@
+{
+  "30-9-2021": {
+    "0": { //h
+      "0": { //min
+        "0": { //seconds
+          "temperature": 0,
+          "humidity": 0,
+          "light": 0
+        },
+        "10": {
+          "temperature": 0,
+          "humidity": 0,
+          "light": 0
+        },
+        "20": {
+          "temperature": 0,
+          "humidity": 0,
+          "light": 0
+        }
+      }
+    }
+  }
+}
