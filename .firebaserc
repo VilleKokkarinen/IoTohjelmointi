@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "iot-ohjelmointi"
+  },
+  "targets": {
+    "iot-ohjelmointi": {
+      "hosting": {
+        "iotohjelmointi": [
+          "iot-ohjelmointi"
+        ]
+      }
+    }
+  }
+}

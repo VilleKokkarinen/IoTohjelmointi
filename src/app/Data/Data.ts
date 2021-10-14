@@ -1,8 +1,5 @@
 export interface Data {
-DDY: string;
-h: number;
-min: number;
-seconds: number;
+timestamp: Date;
 temperature: number;
 humidity: number;
 light: number;

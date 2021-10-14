@@ -1,0 +1,6 @@
+<div class="listing" *ngFor="let item of data | async">
+    <h4>{{ item.timestamp | date:'medium'}}</h4>
+    <h3>{{ item.temperature }}</h3>
+    <h3>{{ item.humidity }}</h3>
+    <h3>{{ item.light }}</h3>
+</div>
