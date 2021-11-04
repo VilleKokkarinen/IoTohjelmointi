@@ -1,6 +1,23 @@
-<div class="listing" *ngFor="let item of data | async">
-    <h4>{{ item.timestamp | date:'medium'}}</h4>
-    <h3>{{ item.temperature }}</h3>
-    <h3>{{ item.humidity }}</h3>
-    <h3>{{ item.light }}</h3>
-</div>
+<div *ngIf="items$ | async; let items; else loading">
+    <ul>
+      <li *ngFor="let item of items">
+        <h4>{{ ConvertDate(item.payload.val().Timestamp) | date:'short':'+0300':'fi'}}</h4>
+        <div> 
+            <div>
+                Temperature: {{ item.payload.val().Temperature }} ℃
+            </div>
+            <div>
+                Humidity: {{ item.payload.val().Humidity}}
+            </div>
+            <div>
+                Light: {{ item.payload.val().Light }}
+            </div>
+        </div>
+      
+
+
+      </li>
+    </ul>
+    <div *ngIf="items.length === 0">No results</div>
+  </div>
+  <ng-template #loading>Loading&hellip;</ng-template>
